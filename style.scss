@@ -220,6 +220,7 @@ footer {
 @media only screen and (max-width: 1120px) {
   .image-section {
     display: flex;
+    padding: 30px 5%;
     .img {
       width: 50%;
     }
@@ -322,7 +323,7 @@ footer {
 
     .text-container {
       width: 100%;
-      padding: 100px 20px 40px 0px;
+      padding: 100px 20px 0px 0px;
     }
   }
 }
@@ -335,7 +336,7 @@ footer {
   }
 
   .creations {
-    padding: 100px 5%;
+    padding: 50px 5% 100px 5%;
     position: relative;
 
     .header {
