@@ -69,7 +69,7 @@ nav {
   padding: 100px 10%;
   position: relative;
 
-  img {
+  .img {
     width: 65%;
   }
   .text-container {
@@ -122,14 +122,15 @@ nav {
     margin-top: 40px;
     flex-wrap: wrap;
     .creation {
-      background-image: url(images/image-deep-earth.jpg),
-        linear-gradient(black, white);
+      background: linear-gradient(rgba(255, 255, 255, 0), #030303a9),
+        url(images/image-deep-earth.jpg);
       height: 500px;
       width: 250px;
       background-position: center;
       background-size: cover;
       position: relative;
       margin: 20px 10px;
+
       h1 {
         color: $white;
         position: absolute;
@@ -140,25 +141,41 @@ nav {
       }
 
       &:nth-child(2) {
-        background-image: url(images/image-night-arcade.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0), #030303a9),
+          url(images/image-night-arcade.jpg);
       }
       &:nth-child(3) {
-        background-image: url(images/image-soccer-team.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0), #030303a9),
+          url(images/image-soccer-team.jpg);
       }
       &:nth-child(4) {
-        background-image: url(images/image-grid.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0), #030303a9),
+          url(images/image-grid.jpg);
       }
       &:nth-child(5) {
-        background-image: url(images/image-from-above.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0), #030303a9),
+          url(images/image-from-above.jpg);
       }
       &:nth-child(6) {
-        background-image: url(images/image-pocket-borealis.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0), #030303a9),
+          url(images/image-pocket-borealis.jpg);
       }
       &:nth-child(7) {
-        background-image: url(images/image-curiosity.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0), #030303a9),
+          url(images/image-curiosity.jpg);
       }
       &:nth-child(8) {
-        background-image: url(images/image-fisheye.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0), #030303a9),
+          url(images/image-fisheye.jpg);
+      }
+
+      .color-overlay {
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease;
+        &:hover {
+          background-color: #ffffff48;
+        }
       }
     }
   }
@@ -196,6 +213,19 @@ footer {
     .copyright {
       margin-top: 40px;
       color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .image-section {
+    display: flex;
+    .img {
+      width: 50%;
+    }
+
+    .text-container {
+      position: static;
     }
   }
 }
@@ -279,6 +309,22 @@ footer {
       }
     }
   }
+
+  .image-section {
+    flex-direction: column;
+    .img {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .text-container {
+      width: 100%;
+      padding: 100px 20px 40px 0px;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -307,7 +353,8 @@ footer {
     .creations-img {
       .creation {
         width: 100%;
-        height: 150px;
+        height: 175px;
+        background-position: top;
 
         h1 {
           width: 50%;
