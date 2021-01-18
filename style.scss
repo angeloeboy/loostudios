@@ -164,6 +164,42 @@ nav {
   }
 }
 
+footer {
+  background-color: black;
+  margin-top: 50px;
+  padding: 50px 10%;
+
+  .menu {
+    text-align: left;
+
+    ul {
+      padding-left: 0px;
+      margin-top: 40px;
+      li {
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 30px;
+        a {
+          color: white;
+          font-family: "Alata", sans-serif;
+        }
+      }
+    }
+  }
+
+  .accounts {
+    text-align: right;
+    .icon {
+      margin-left: 20px;
+    }
+
+    .copyright {
+      margin-top: 40px;
+      color: white;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   nav {
     .links-container {
@@ -216,6 +252,30 @@ nav {
         margin-right: auto;
         left: 50%;
         transform: translateX(-50%);
+      }
+    }
+  }
+
+  footer {
+    .menu {
+      ul {
+        text-align: center;
+        li {
+          display: block;
+          margin-top: 10px;
+          margin-right: 0px;
+        }
+      }
+    }
+
+    .accounts {
+      margin-top: 20px;
+      text-align: center;
+      padding: 0px;
+      .icon {
+        // background-color: green;
+        margin: 0px;
+        margin: 0px 5px;
       }
     }
   }

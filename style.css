@@ -178,6 +178,45 @@ nav .menu {
   background-image: url(images/image-fisheye.jpg);
 }
 
+footer {
+  background-color: black;
+  margin-top: 50px;
+  padding: 50px 10%;
+}
+
+footer .menu {
+  text-align: left;
+}
+
+footer .menu ul {
+  padding-left: 0px;
+  margin-top: 40px;
+}
+
+footer .menu ul li {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+footer .menu ul li a {
+  color: white;
+  font-family: "Alata", sans-serif;
+}
+
+footer .accounts {
+  text-align: right;
+}
+
+footer .accounts .icon {
+  margin-left: 20px;
+}
+
+footer .accounts .copyright {
+  margin-top: 40px;
+  color: white;
+}
+
 @media only screen and (max-width: 768px) {
   nav .links-container {
     position: absolute;
@@ -226,6 +265,23 @@ nav .menu {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  footer .menu ul {
+    text-align: center;
+  }
+  footer .menu ul li {
+    display: block;
+    margin-top: 10px;
+    margin-right: 0px;
+  }
+  footer .accounts {
+    margin-top: 20px;
+    text-align: center;
+    padding: 0px;
+  }
+  footer .accounts .icon {
+    margin: 0px;
+    margin: 0px 5px;
   }
 }
 
